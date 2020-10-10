@@ -1,0 +1,29 @@
+package pkg_sampleproject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Factorial_level2 {
+
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		int i,num;
+		int fact=1;
+		
+		InputStreamReader reader = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(reader);
+		
+		System.out.println("Enter the number to find the factorial : ");
+		num=Integer.parseInt(br.readLine());
+		
+		for(i=1;i<=num;i++){
+			fact=fact*i;
+		}
+		
+		System.out.println("The factorial of the number is : "+fact);
+
+	}
+
+}
